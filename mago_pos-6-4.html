@@ -658,11 +658,15 @@ nav{display:flex;background:#0f0f0f;border-top:1px solid var(--border);flex-shri
         <div class="term-msg" style="color:var(--cream)">Aguardando maquineta...</div>
         <div class="term-sub">Conclua no Point Smart 2</div>
       </div>
-      <div class="term-status" id="term-success" style="display:none">
-        <div class="term-icon">✅</div>
-        <div class="term-msg" style="color:var(--green)">Aprovado!</div>
-        <div class="term-sub">Registrando venda...</div>
-      </div>
+<div class="term-status" id="term-success" style="display:none;flex-direction:column;align-items:center;gap:8px">
+  <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#4CAF50"/>
+    <polyline points="22,42 34,54 58,28" stroke="#ccf5cc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+  <div class="term-msg" style="color:#4CAF50;font-size:22px;font-weight:bold">Pagamento Aprovado!</div>
+  <div id="term-success-method" style="color:var(--cream);font-size:15px;opacity:0.85"></div>
+  <div class="term-sub">Registrando venda...</div>
+</div>
       <div class="term-status" id="term-error" style="display:none">
         <div class="term-icon">❌</div>
         <div class="term-msg" style="color:var(--red)" id="term-err-msg">Pagamento recusado</div>
